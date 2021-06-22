@@ -12,6 +12,7 @@ import { NavController } from '@ionic/angular';
 export class AppComponent {
 
   usuario:string='João Alves'
+  isLoged=true;
 
   public appPages = [
     { title: 'Perfil', url: '/tela-perfil', icon: 'person-circle' },
