@@ -52,6 +52,12 @@
           <ion-col>
             <div class="ion-text-center">
 
+              <!-- SIGN UP-->
+              <ng-container *ngIf='!configs.isSignIn'>
+                <!-- BUTTON CADASTRO -->
+                <ion-button color="danger">CADASTRAR</ion-button><br>
+              </ng-container>
+
               <!-- BUTTON FAZER LOGIN FACEBOOK -->
               <ion-button [routerLink]="['/home']" font-size="small" type="submit" color="primary" [hidden]='!configs.isSignIn'>
                 <ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;
@@ -69,7 +75,7 @@
               </small><br>
 
               <!-- BUTTON INSCREVA-SE -->
-              <ion-button [routerLink]="['/registro']" color="danger" [hidden]='!configs.isSignIn'>Inscreva-se</ion-button>
+              <ion-button [routerLink]="['/registro']" color="danger">Inscreva-se</ion-button>
 
             </div>
           </ion-col>
