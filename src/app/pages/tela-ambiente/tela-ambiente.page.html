@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ambiente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Unidade:</ion-label>
+    <ion-select interface="popover">
+      <ion-select-option value="administrativo">1</ion-select-option>
+      <ion-select-option value="anfiteatro">2</ion-select-option>
+      <ion-select-option value="auditorio">3</ion-select-option>
+      <ion-select-option value="comportamental">4</ion-select-option>
+      <ion-select-option value="laboratorio">5</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Tipo de Ambiente:</ion-label>
+    <ion-select interface="popover">
+      <ion-select-option value="administrativo">Administrativo</ion-select-option>
+      <ion-select-option value="anfiteatro">Anfiteatro</ion-select-option>
+      <ion-select-option value="auditorio">Auditório</ion-select-option>
+      <ion-select-option value="comportamental">Comportamental</ion-select-option>
+      <ion-select-option value="laboratorio">Laboratório</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Nome:</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Capacidade:</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Quantidade de Computador:</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">IP Câmera:</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="primary" class="">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="success" routerLink="/contacts/create" routerDirection="forward" data-desc="ADICIONAR">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="warning" routerLink="/reminder/create" routerDirection="forward" data-desc="ALTERAR">
+        <ion-icon name="sync"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="danger" routerLink="/reminder/create" routerDirection="forward" data-desc="REMOVER">
+        <ion-icon name="trash"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

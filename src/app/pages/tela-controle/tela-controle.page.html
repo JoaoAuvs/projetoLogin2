@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Controle Remoto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Luz Frontal</ion-label>
+    <ion-toggle slot="start" name="luzFrontal" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Luz de Fundo</ion-label>
+    <ion-toggle slot="start" name="luzDeFundo" checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Kit Multimídia</ion-label>
+    <ion-toggle slot="start" name="kitMultimidia"checked></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Datashow</ion-label>
+    <ion-toggle slot="start" name="datashow"checked></ion-toggle>
+  </ion-item>
+
+  <br>
+  <ion-button type="submit" color="success" expand="block">SALVAR</ion-button>
+  <br>
+  <ion-button type="submit" color="danger" expand="block">CANCELAR</ion-button>
+
+</ion-content>

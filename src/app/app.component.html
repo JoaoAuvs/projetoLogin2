@@ -1,0 +1,40 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu [disabled]="isLoged" contentId="main-content" type="push">
+
+      <ion-content>
+
+        <!-- AVATAR -->
+        <ion-list id="inbox-list">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/68896dfe3171bb0a8ebb9609a53cd3b3f05d1f2e/src/demos/api/avatar/avatar.svg">
+            </ion-avatar>
+            <ion-label>{{usuario}}</ion-label>
+            <ion-button (click)=logout() slot="end" color="dark">
+              <ion-icon name="exit"></ion-icon>
+            </ion-button>
+          </ion-item>
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+
+        <ion-list id="labels-list">
+          <ion-list-header>Contatos</ion-list-header>
+          <ion-item *ngFor="let label of labels" lines="none">
+            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-outline"></ion-icon>
+            <ion-label>{{ label.title }}</ion-label>
+          </ion-item>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

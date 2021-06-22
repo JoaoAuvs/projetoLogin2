@@ -1,0 +1,27 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button [routerLink]="['/tabs/tabs/tela-mqtt']"  tab="Mqtt">
+      <ion-icon color="danger" name="radio"></ion-icon>
+      <ion-label>Mqtt</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tabs/tela-wifi']"  tab="Wifi">
+      <ion-icon color="success" name="wifi"></ion-icon>
+      <ion-label>Wi-Fi</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tabs/tela-embarcado']"  tab="Embarcados">
+      <ion-icon color="warning" name="hardware-chip"></ion-icon>
+      <ion-label>Embarcados</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tabs/tela-controle']"  tab="Controle">
+      <ion-icon color="primary" name="ellipsis-horizontal"></ion-icon>
+      <ion-label>Controle</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

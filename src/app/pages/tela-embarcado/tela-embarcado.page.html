@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Configuração Embarcado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Descrição</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Firmware</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Localização</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Status</ion-label>
+    <ion-select value="Selecionar">
+      <ion-select-option value="Selecionar">Selecionar</ion-select-option>
+      <ion-select-option value="Pendente">Pendente</ion-select-option>
+      <ion-select-option value="Desativado">Desativado</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">MAC Embarcado</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">IP Embarcado</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Porta MQTT</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Porta MQTT</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button type="submit" color="success" expand="block">SALVAR</ion-button>
+  <br>
+  <ion-button type="submit" color="danger" expand="block">CANCELAR</ion-button>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nome Completo:</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha:</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Confirmar Senha:</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <br>
+        <!-- BUTTON FAZER LOGIN -->
+        <ion-button [routerLink]="['/registro']" type="submit" color="primary" expand="block">CADASTRAR</ion-button><br>
+       
+        <span class="divider line one-line">
+          <ion-button [routerLink]="['/login']" expand="block" color="danger">ENTRAR</ion-button>
+        </span>
+      </ion-col>
+    </ion-row>
+    
+  </form>
+  </div>
+</ion-content>

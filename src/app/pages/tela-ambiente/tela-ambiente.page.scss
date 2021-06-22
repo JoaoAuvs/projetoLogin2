@@ -1,0 +1,24 @@
+ion-select {
+    /* Applies to the value and placeholder color */
+    color: #545ca7;
+  
+    /* Set a different placeholder color */
+    --placeholder-color: #971e49;
+  
+    /* Set full opacity on the placeholder */
+    --placeholder-opacity: 1;
+  }
+  ion-fab-button[data-desc] {
+    position: relative;
+  }
+  
+  ion-fab-button[data-desc]::after {
+    position: absolute;
+    content: attr(data-desc);
+    z-index: 1;
+    right: 55px;
+    bottom: 4px;
+    padding: 9px;
+    border-radius: 15px;
+    color: white;
+  }

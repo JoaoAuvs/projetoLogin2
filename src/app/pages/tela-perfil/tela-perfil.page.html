@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Primeiro Nome</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Sobrenome:</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Email:</ion-label>
+    <ion-input type="email" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Celular:</ion-label>
+    <ion-input type="int" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Senha:</ion-label>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Confirmar Senha:</ion-label>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+
+  <br>
+  <ion-button type="submit" color="success" expand="block">SALVAR</ion-button>
+  <br>
+  <ion-button type="submit" color="danger" expand="block">CANCELAR</ion-button>
+
+</ion-content>
